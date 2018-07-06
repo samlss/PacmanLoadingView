@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PacmanLoadingView">
+        <attr name="eater_color" format="color"></attr>
+        <attr name="peas_color" format="color"></attr>
+        <attr name="speed" >
+            <flag name = "normal" value = "0" />
+            <flag name = "fast" value = "1" />
+            <flag name = "slow" value = "2" />
+        </attr>
+    </declare-styleable>
+</resources>
