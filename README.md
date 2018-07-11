@@ -53,7 +53,7 @@ dependencies {
 
 代码中使用：
 ```
-  pacmanLoadingView.start(); //开始动画
+  pacmanLoadingView.start(); //开始动画，需要调用该接口开始动画
   pacmanLoadingView.stop(); //结束动画
   pacmanLoadingView.setEaterColor(Color.BLACK); //设置吃东西的圆的颜色
   pacmanLoadingView.setPeasColor(Color.BLUE); //设置豆的颜色
@@ -109,7 +109,7 @@ in layout.xml：
 
 in java code：
 ```
-  pacmanLoadingView.start(); //start loading animation
+  pacmanLoadingView.start(); //start loading animation, need to call this method to start anim.
   pacmanLoadingView.stop(); //stop loading animation
   pacmanLoadingView.setEaterColor(Color.BLACK); //set the eater's color
   pacmanLoadingView.setPeasColor(Color.BLUE); //set the pea's color
