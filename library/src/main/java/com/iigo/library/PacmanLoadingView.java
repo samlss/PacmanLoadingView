@@ -1,4 +1,4 @@
-package com.iigo.library;
+﻿package com.iigo.library;
 
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
@@ -147,6 +147,7 @@ public class PacmanLoadingView extends View {
         super.onSizeChanged(w, h, oldw, oldh);
 
         eaterRadius = w < h ? w / 2 : h / 2;
+
         peaRadius = eaterRadius / 20;
         howLongToCreateNewPea = peaRadius * 10;
         peaStartXWhenCreate = w + peaRadius;
