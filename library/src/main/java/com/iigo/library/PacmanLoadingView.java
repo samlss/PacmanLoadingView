@@ -146,7 +146,7 @@ public class PacmanLoadingView extends View {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
 
-        eaterRadius = w / 2;
+        eaterRadius = w < h ? w / 2 : h / 2;
         peaRadius = eaterRadius / 20;
         howLongToCreateNewPea = peaRadius * 10;
         peaStartXWhenCreate = w + peaRadius;
