@@ -37,6 +37,7 @@ public class PacmanLoadingView extends View {
     private int peasColor = Color.WHITE; //The peas's color, the default is white.
 
     private ValueAnimator eaterAnimator; //The eater's animator.
+    private long animatorPlayTime;
     private float eaterAngleRatio = 0; //The eater's angle ratio, 0°- 90°
 
     private float eaterRadius;
@@ -216,13 +217,15 @@ public class PacmanLoadingView extends View {
     }
 
     public void start(){
-        if (!eaterAnimator.isRunning()) {
+        if (eaterAnimator != null && !eaterAnimator.isRunning()) {
+            eaterAnimator.setCurrentPlayTime(animatorPlayTime);
             eaterAnimator.start();
         }
     }
 
     public void stop(){
-        if (eaterAnimator.isRunning()) {
+        if (eaterAnimator != null && eaterAnimator.isRunning()) {
+            animatorPlayTime = eaterAnimator.getCurrentPlayTime();
             eaterAnimator.cancel();
         }
     }
