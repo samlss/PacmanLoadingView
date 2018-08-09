@@ -11,11 +11,7 @@ A pacman loading view(一个吃豆豆的loading view)。
 
 <br>
 
-![gif1](https://github.com/samlss/PacmanLoadingView/blob/master/screenshots/screenshot1.gif)
-
-![gif2](https://github.com/samlss/PacmanLoadingView/blob/master/screenshots/screenshot2.gif)
-
-![gif3](https://github.com/samlss/PacmanLoadingView/blob/master/screenshots/screenshot3.gif)
+![gif](https://github.com/samlss/PacmanLoadingView/blob/master/screenshots/screenshot4.gif)
 
 
 ## 中文
