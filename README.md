@@ -30,7 +30,7 @@ allprojects {
 在app目录下的build.gradle添加依赖使用：
 ```
 dependencies {
-    implementation 'com.github.samlss:PacmanLoadingView:1.11'
+    implementation 'com.github.samlss:PacmanLoadingView:1.12'
 }
 ```
 
@@ -85,7 +85,7 @@ allprojects {
 Add it in your app build.gradle at the end of repositories:
 ```
 dependencies {
-    implementation 'com.github.samlss:PacmanLoadingView:1.11'
+    implementation 'com.github.samlss:PacmanLoadingView:1.12'
 }
 ```
 
