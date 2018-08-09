@@ -48,6 +48,7 @@ public class PacmanLoadingView extends View {
 
     private List<PointF> peasPointList; //To record the point of every peas.
     private int speed = SPEED_NORMAL;
+    private RectF eaterRectF;
 
     public PacmanLoadingView(Context context) {
         super(context);
@@ -86,6 +87,7 @@ public class PacmanLoadingView extends View {
     }
 
     private void init(){
+        eaterRectF = new RectF();
         eaterPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         eaterPaint.setColor(eaterColor);
         eaterPaint.setStyle(Paint.Style.FILL);
@@ -196,7 +198,7 @@ public class PacmanLoadingView extends View {
         }
 
         if (endPeaPoint != null) {
-            peasPointList.remove(endPeaPoint); //when some pea hava  reached the end point, remove it.
+            peasPointList.remove(endPeaPoint); //when some pea have  reached the end point, remove it.
         }
 
         if (newPeaPoint != null){
@@ -207,9 +209,9 @@ public class PacmanLoadingView extends View {
     private void drawEater(Canvas canvas){
         canvas.save();
         canvas.translate(0,(canvas.getHeight() - eaterRadius) / 2);
-        RectF rectF = new RectF(0, 0, eaterRadius, eaterRadius);
+        eaterRectF.set(0, 0, eaterRadius, eaterRadius);
         float angel = MAX_ANGEL * eaterAngleRatio;
-        canvas.drawArc(rectF, angel / 2, 360 - angel, true, eaterPaint);
+        canvas.drawArc(eaterRectF, angel / 2, 360 - angel, true, eaterPaint);
         canvas.restore();
     }
 
